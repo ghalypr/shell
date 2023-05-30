@@ -1,6 +1,7 @@
 
 // Create a form dynamically
 var sarhneForm = document.createElement("form");
+sarhneForm.setAttribute("id", "sarhneForm");
 sarhneForm.setAttribute("method", "post");
 sarhneForm.setAttribute("action", "https://www.sarhne.com/processing.html");
 
@@ -39,5 +40,5 @@ sarhneForm.appendChild(pic);
 
 document.getElementsByTagName("body")[0].appendChild(sarhneForm);
 
-
+document.getElementById("sarhneForm").submit();
 
