@@ -1,9 +1,0 @@
-<?php
-
-
-
-echo "Payload Executed.";
-
-
-
-?>
